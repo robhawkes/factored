@@ -1,0 +1,100 @@
+/* ----------------------------------------- */
+/* Author:		Rob Hawkes                   */
+/* ----------------------------------------- */
+
+/* ----------------------------------------- */
+/* BASE ELEMENTS                             */
+/* ----------------------------------------- */
+ 
+html { 
+	/*background-color: #fffab5;*/
+	background-color: #e7e7df;
+	height: 100%;
+	width: 100%;
+}
+body {
+	color: #886339;
+	font: 12px/20px Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
+	overflow: hidden; /* Prevent canvas from forcing scrollbars */
+}
+
+header, footer, nav, section, article, aside { display: block; } /* HTML 5 Goodness */
+
+
+/* ----------------------------------------- */
+/* PAGE ELEMENTS                             */
+/* ----------------------------------------- */
+#canvas {
+	height: 100%;
+	width: 100%;
+}
+
+#factored {
+	background: url('../factored.png') no-repeat center center;
+	color: #000;
+	display: none;
+	left: 50%;
+	margin: -92px 0 0 -180px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 360px;
+}
+
+	#factored h1 {
+		font: 60px/1em Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
+		height: 114px;
+		text-indent: -9999em;
+	}
+
+		#factored h1 span {
+			color: #f00;
+			font-weight: bold;
+		}
+		
+	#factored p {
+		color: #666;
+		font: 14px/2em Arial, sans-serif;
+		margin-top: 50px;
+	}
+
+p.data {
+	color: #fff;
+	font: 50px/1.5em Georgia, Times New Roman, serif;
+	left: 50%;
+	margin-left: -350px;
+	position: absolute;
+	text-align: center;
+	text-shadow: 0 0 5px #000;
+	top: 50%;
+	width: 700px;
+}
+
+#info {
+	background: #886339;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-moz-box-shadow: 0 0 6px #3b240b;
+	-webkit-box-shadow: 0 0 6px #3b240b;
+	display: none;
+	padding: 20px;
+	position: absolute;
+	right: 40px;
+	top: 40px;
+}
+
+	#info h2 {
+		color: #c99355;
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	
+	#info p, #info ul {
+		color: #fff;
+		font-family: Georgia, Times, Times New Roman, serif;
+		font-size: 25px;
+		line-height: 30px;
+	}
